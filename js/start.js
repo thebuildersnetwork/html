@@ -2,14 +2,17 @@
  * Website start here
  */
 $(window).load(function() {
-    wow = new WOW({
-        animateClass: 'animated',
-        offset: 100,
-        callback: function(box) {
-            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-        }
-    });
-    wow.init();
+    if ($(window).width() > 1199) {
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100,
+            callback: function(box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        });
+        wow.init();
+    }
+
 });
 $(document).ready(function($) {
     $('a.page-scroll').bind('click', function(event) {
@@ -34,7 +37,21 @@ $(document).ready(function($) {
             })
         });
     }
-
+    if ($(".header").length > 0) {
+        $(window).scroll(function() {
+            var e = $(window).scrollTop();
+            if (e > 1) {
+                $(".header").addClass("active");
+            } else {
+                $(".header").removeClass("active");
+            }
+        });
+        $(".btn-top").click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            })
+        });
+    }
     if ($(".btn-searchsg").length > 0) {
         $(".btn-searchsg").click(function() {
             if ($(".frm-search-1").hasClass("active")) {
@@ -49,7 +66,41 @@ $(document).ready(function($) {
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
-        dots: false
+        dots: false,
+        responsive: [{
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 760,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
 
     $('.main-slider').slick({
@@ -103,7 +154,7 @@ $(document).ready(function($) {
             // instead of a settings object
         ]
     });
-    $('.slick-video').slick({   
+    $('.slick-video').slick({
         dots: false,
         infinite: false,
         speed: 300,
@@ -137,7 +188,7 @@ $(document).ready(function($) {
             // instead of a settings object
         ]
     });
-    $('.slick-ins').slick({   
+    $('.slick-ins').slick({
         dots: false,
         infinite: false,
         speed: 300,

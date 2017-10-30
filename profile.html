@@ -31,12 +31,16 @@
             <div class="dot2"></div>
         </div>
     </div>
-    <header>
+    <header class="header">
         <nav class="navbar main-nav navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse pull-right" id="navbarNavDropdown">
                     <ul class="navbar-nav  ml-auto">
@@ -58,7 +62,7 @@
         <div class="container">
             <div class="banner-1">
                 <div class="outer-img">
-                    <img src="images/banner/banner-3.jpg" alt="">
+                    <img class="img-banner" src="images/transparent.png" alt="" style="background-image: url(images/cover/PALMTREE.PNG);">
                     <article class="art-user">
                         <a href="#" title="">
                             <img src="images/user.png" alt="">
@@ -92,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="highlight">
+            <div class="highlight no-padding">
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="block-1  wow fadeInUp">
@@ -146,7 +150,7 @@
                     </div>
                 </div>
             </div>
-            <div class="highlight">
+            <div class="highlight no-padding">
                 <div class="slider-1  wow fadeInUp">
                     <div>
                         <a href="#" title=""><img src="images/slider/photo-1.jpg"></a>
@@ -167,6 +171,70 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <h6 class="heading">About</h6>
+                    <p class="grey-light">
+                        <strong>GO SESH</strong> is about living life. It is about escaping the mundane, seeking new experiences, and encouraging our users to breakaway from monotonous living. We are a fitness app by definition, but our values at GO SESH are less about getting fit and more about using fitness opportunities to explore the world, meet new people and achieve a healthy and balanced life along the way.
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h6 class="heading">The GoSESH</h6>
+                    <ul class="info">
+                        <li>
+                            <span class="white">GoSesh Ltd</span>
+                            <br> 24 Holborn Viaduct, City of London,
+                            <br> London EC1A2BN
+                            <br> CRN: <a href="">10394158 <br> Mail: </a><a href="mailto:frothers@gosesh.co">frothers@gosesh.co</a>
+                            <br>
+                            <a href="javascript:$zopim.livechat.window.show();">Leave us a message</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h6 class="heading">Pages</h6>
+                    <ul class="sitemap">
+                        <li><a href="/search">Search</a></li>
+                        <li><a href="/page/contact-us">Contact Us</a></li>
+                        <li><a href="/page/about-us">About Us</a></li>
+                        <li><a href="/blog">Our Blog</a></li>
+                        <li><a href="/page/terms-and-conditions">Terms &amp; Conditions</a></li>
+                        <li><a href="/page/frequently-asked-questions">Frequently Asked Questions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 padding-leftright-null">
+                    <h6 class="heading white margin-bottom-extrasmall">Training Country/Currency</h6>
+                    <div class="block-sec" style="padding: 0; margin: 0;">
+                        <form action="/site/language" method="post">
+                            <input type="hidden" name="_csrf-frontend" value="">
+                            <div class="select select-alt">
+                                <select id="training-country-switches" class="form-control c-select" name="language">
+                                    <option value="en-GB" selected="">United Kingdom</option>
+                                    <option value="en-US">United States</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="row no-margin">
+                    <div class="col-md-8 padding-leftright-null col-xs-4">
+                        © 2017 GoSesh Ltd
+                    </div>
+                    <div class="col-md-4 padding-leftright-null col-xs-8" style="text-align: right">
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/gosesh.co" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/go.sesh/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://vimeo.com/user59992518" target="_blank"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <a class="btn-top" href="javascript:void(0)" title="top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/lib.js"></script>

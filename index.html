@@ -24,19 +24,24 @@
     <![endif]-->
 </head>
 
-<body class="style">
+<body>
     <div class="loading">
         <div class="spinner">
             <div class="dot1"></div>
             <div class="dot2"></div>
         </div>
     </div>
-    <header>
+    <img class="body-bgd" src="images/banner/banner-1-1.jpg">
+    <header class="header">
         <nav class="navbar main-nav navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse pull-right" id="navbarNavDropdown">
                     <ul class="navbar-nav  ml-auto">
@@ -52,7 +57,7 @@
                         <li class="nav-item dropdown user">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Brit rose <img src="images/user.png" alt=""></a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown-menu animated slideInUp" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
@@ -66,25 +71,40 @@
     <section class="main">
         <div class="container">
             <div class="banner ">
-                
-                    <div class="main-slider">
-                        <div>
-                            <a class="banner-outer" href="#" title="#">
-                                <img src="images/banner/banner-home-1.png" alt="">
-                            </a>
-                        </div>
-                        <div>
-                            <a class="banner-outer" href="#" title="#">
-                                <img src="images/banner/banner-home-2.png" alt="">
-                            </a>
-                        </div>
-                        <div>
-                            <a class="banner-outer" href="#" title="#">
-                                <img src="images/banner/banner-home-3.png" alt="">
-                            </a>
+                <div class="main-slider">
+                    <div>
+                        <a class="banner-outer" href="#" title="#" style="background-image: url(images/banner/banner-home-1.png);"></a>
+                        <div class="slider-ctn ctn-green">
+                            <div class="inner">
+                                <h3>FIND A SESH</h3>
+                                <p>Unique fitness experiences
+                                    <br> empowering you to <span>Escape the mundane</span></p>
+                            </div>
                         </div>
                     </div>
-               
+                    <div>
+                        <a class="banner-outer" href="#" title="#" style="background-image: url(images/banner/banner-home-2.png);"></a>
+                        </a>
+                        <div class="slider-ctn ctn-white">
+                            <div class="inner">
+                                <h3>CREATE A SESH</h3>
+                                <p>+ Host a Session</p>
+                                <p>+ Collect Payments</p>
+                                <p>+ Manage Tour Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a class="banner-outer" href="#" title="#" style="background-image: url(images/banner/banner-home-3.png);"></a>
+                        </a>
+                        <div class="slider-ctn ctn-white">
+                            <div class="inner">
+                                <h3>OUR STORY</h3>
+                                <p>The inspiration behind our ethos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="highlight wow fadeInDown">
                 <h2>Escape the mundane</h2>
@@ -168,7 +188,7 @@
             <div class="highlight wow fadeInUp">
                 <h2>Top Session</h2>
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-md-4 col-sm-6">
                         <article class="art-1">
                             <div>
                                 <a href="#"><img src="images/photo/photo-1.jpg"></a>
@@ -183,7 +203,7 @@
                             <h3><a href="#">Yougae</a></h3>
                         </article>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6 col-md-4">
                         <article class="art-1">
                             <div>
                                 <a href="#"><img src="images/photo/photo-1.jpg"></a>
@@ -198,7 +218,7 @@
                             <h3><a href="#">Yougae</a></h3>
                         </article>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6 col-md-4">
                         <article class="art-1">
                             <div>
                                 <a href="#"><img src="images/photo/photo-1.jpg"></a>
@@ -213,7 +233,7 @@
                             <h3><a href="#">Yougae</a></h3>
                         </article>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6 col-md-4">
                         <article class="art-1">
                             <div>
                                 <a href="#"><img src="images/photo/photo-1.jpg"></a>
@@ -228,7 +248,7 @@
                             <h3><a href="#">Yougae</a></h3>
                         </article>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6 col-md-4">
                         <article class="art-1">
                             <div>
                                 <a href="#"><img src="images/photo/photo-1.jpg"></a>
@@ -243,7 +263,7 @@
                             <h3><a href="#">Yougae</a></h3>
                         </article>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-6 col-md-4">
                         <article class="art-1">
                             <div>
                                 <a href="#"><img src="images/photo/photo-1.jpg"></a>
@@ -262,6 +282,70 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <h6 class="heading">About</h6>
+                    <p class="grey-light">
+                        <strong>GO SESH</strong> is about living life. It is about escaping the mundane, seeking new experiences, and encouraging our users to breakaway from monotonous living. We are a fitness app by definition, but our values at GO SESH are less about getting fit and more about using fitness opportunities to explore the world, meet new people and achieve a healthy and balanced life along the way.
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h6 class="heading">The GoSESH</h6>
+                    <ul class="info">
+                        <li>
+                            <span class="white">GoSesh Ltd</span>
+                            <br> 24 Holborn Viaduct, City of London,
+                            <br> London EC1A2BN
+                            <br> CRN: <a href="">10394158 <br> Mail: </a><a href="mailto:frothers@gosesh.co">frothers@gosesh.co</a>
+                            <br>
+                            <a href="javascript:$zopim.livechat.window.show();">Leave us a message</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h6 class="heading">Pages</h6>
+                    <ul class="sitemap">
+                        <li><a href="/search">Search</a></li>
+                        <li><a href="/page/contact-us">Contact Us</a></li>
+                        <li><a href="/page/about-us">About Us</a></li>
+                        <li><a href="/blog">Our Blog</a></li>
+                        <li><a href="/page/terms-and-conditions">Terms &amp; Conditions</a></li>
+                        <li><a href="/page/frequently-asked-questions">Frequently Asked Questions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 padding-leftright-null">
+                    <h6 class="heading white margin-bottom-extrasmall">Training Country/Currency</h6>
+                    <div class="block-sec" style="padding: 0; margin: 0;">
+                        <form action="/site/language" method="post">
+                            <input type="hidden" name="_csrf-frontend" value="">
+                            <div class="select select-alt">
+                                <select id="training-country-switches" class="form-control c-select" name="language">
+                                    <option value="en-GB" selected="">United Kingdom</option>
+                                    <option value="en-US">United States</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="row no-margin">
+                    <div class="col-md-8 padding-leftright-null col-xs-4">
+                        © 2017 GoSesh Ltd
+                    </div>
+                    <div class="col-md-4 padding-leftright-null col-xs-8" style="text-align: right">
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/gosesh.co" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/go.sesh/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://vimeo.com/user59992518" target="_blank"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <a class="btn-top" href="javascript:void(0)" title="top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/lib.js"></script>
