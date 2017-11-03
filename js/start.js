@@ -15,6 +15,12 @@ $(window).load(function() {
 
 });
 $(document).ready(function($) {
+
+    if ($(".item-mansory").length > 0) {
+        $('.item-mansory').masonry({
+            itemSelector: '.col-art'
+        });
+    }
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
