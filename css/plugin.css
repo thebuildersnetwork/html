@@ -104,6 +104,15 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'DINConMed';
+  src: url('../fonts/DINConMed.eot');
+  src: url('../fonts/DINConMed.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/DINConMed.woff') format('woff'), 
+  url('../fonts/DINConMed.ttf') format('truetype'), 
+  url('../fonts/DINConMed.svg#DINConMed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 a:hover, button:hover, a:focus, button:focus { outline: none; }
 

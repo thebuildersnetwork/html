@@ -24,8 +24,8 @@ $(document).ready(function($) {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 46)
-        });
+            scrollTop: ($($anchor.attr('href')).offset().top -26)
+        },'slow');
         event.preventDefault();
     });
     if ($(".btn-top").length > 0) {
@@ -110,7 +110,7 @@ $(document).ready(function($) {
     });
 
     $('.main-slider').slick({
-        dots: false,
+        dots: true,
         arrows: false,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -152,7 +152,9 @@ $(document).ready(function($) {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    infinite: true,
+                    autoplay: false
                 }
             }
             // You can unslick at a given breakpoint now by adding:
@@ -228,6 +230,7 @@ $(document).ready(function($) {
             // instead of a settings object
         ]
     });
+
 });
 $(document).click(function() {
     $(".a").removeClass("active");
