@@ -1,0 +1,130 @@
+.footer {
+    padding: 50px 0 0;
+    background-color: #444;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+
+    h6.heading {
+        color: #fff;
+        font-family: $font-second-bold, Arial, serif;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0;
+    }
+
+    p {
+        font-family: $font-body-regular, Arial, serif;
+        color: #fff;
+        font-size: 0.875rem;
+        line-height: 1.7;
+        margin-bottom: 16px;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+.footer {
+    .copy,
+    ul li {
+        font-family: $font-body-regular , Arial, serif;
+    }
+}
+
+footer .copy {
+    font-family: $font-body-regular , Arial, serif;
+}
+
+.footer .copy,
+footer .copy {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 18px;
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    position: relative;
+}
+
+.footer .copy .col-md-8,
+footer .copy .col-md-8 {
+    padding-top: 6px;
+}
+
+.footer ul.social li,
+footer ul.social li {
+    display: inline-block;
+    margin-right: 9px;
+    text-align: center;
+}
+
+.footer ul.social li a,
+footer ul.social li a {
+    font-size: 16px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    background-color: #333;
+    border-radius: 15px;
+    display: block;
+    transition: all 0.4s ease;
+    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+
+.footer ul.social li a i,
+footer ul.social li a i {
+    line-height: 30px;
+}
+
+.footer ul {
+    padding-left: 0;
+    font-size: 0.875rem;
+    line-height: 1.7;
+
+    li {
+        list-style: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body .footer {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .footer {
+        .col-sm-6 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .copy .row {
+            display: block;
+            overflow: hidden;
+        }
+    }
+
+    .padding-leftright-null {
+        float: left;
+        width: auto;
+
+        &.col-xs-8 {
+            float: right;
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+$main-fonts: $font-body, $font-body-regular ;
+$second-fonts: $font-second-bold, $font-second-semi-bold;
+
+@each $item in $main-fonts {
+  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}');
+}
+
+@each $item in $second-fonts {
+  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}');
+}
+
+
+/// @example
+///   .myselector {
+///     @include font-family($font-light);
+///   }
+
