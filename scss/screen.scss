@@ -4,10 +4,16 @@
 /* Plugins */
 @import url(../vendor/plugin/css/plugin.css);
 
+
+/* Font Awesome 5 */
+@import url(../vendor/fontawesome/css/fontawesome-all.css);
+
+
 /* Google fonts */
 
 /* Core variables and mixins */
 @import "config/all";
+
 /* Partials */
 @import "partials/all";
 

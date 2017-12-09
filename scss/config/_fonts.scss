@@ -9,6 +9,19 @@ $second-fonts: $font-second-bold, $font-second-semi-bold;
   @include font-face(#{$item}, '../fonts/#{$item}/#{$item}');
 }
 
+$primary-fonts: $font-primary;
+@each $item in $primary-fonts {
+  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}Regular');
+  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}DemiBold', 500);
+}
+
+$secondary-fonts: $font-secondary;
+@each $item in $secondary-fonts {
+  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}Regular');
+  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}Medium', 500);
+  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}Bold', 600);
+}
+
 
 /// @example
 ///   .myselector {

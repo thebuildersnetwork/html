@@ -1,52 +1,89 @@
 .footer {
     padding: 50px 0 0;
-    background-color: #444;
-    color: #fff;
+    background-color: #fff;
+    color: #003333;
     z-index: 2;
     position: relative;
 
-    h6.heading {
-        color: #fff;
-        font-family: $font-second-bold, Arial, serif;
-        font-size: 16px;
-        line-height: 26px;
-        letter-spacing: 0;
+    h6 {
+        font-family: $font-secondary;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        font-weight: bold;
+        &.heading {
+            color: #003333;
+            font-size: 17px;
+            letter-spacing: 0;
+            padding-top: 2em;
+        }
+        &.heading-1 {
+            color: #618D88;
+            font-size: 25px;
+            letter-spacing: 7.5px;
+            text-align: center;
+        }
     }
 
     p {
-        font-family: $font-body-regular, Arial, serif;
-        color: #fff;
+        font-family: $font-primary;
+        color: #003333;
         font-size: 0.875rem;
-        line-height: 1.7;
-        margin-bottom: 16px;
-        letter-spacing: 1px;
-        font-weight: 300;
     }
 
     a {
-        color: #fff;
+        color: #003333;
+    }
+
+    b, strong {
+        font-weight: 500;
     }
 }
 
 .footer {
     .copy,
     ul li {
-        font-family: $font-body-regular , Arial, serif;
+        font-family: $font-primary ;
+    }
+
+    ul.info {
+        text-align: center;
+        font-size: 13px;
+        line-height: 17px;
+        margin-top: 17px;
+    }
+    ul.slogan-icons {
+        text-align: center;
+        margin-bottom: 0;
+
+        li {
+            display: inline-block;
+            padding: 0 5px;
+            a i {
+                max-width: 65px;
+                background-size: contain;
+            }
+        }
+    }
+    .send-msg-btn {
+        background: #003333;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 500;
     }
 }
 
 footer .copy {
-    font-family: $font-body-regular , Arial, serif;
+    font-family: $font-primary ;
 }
 
 .footer .copy,
 footer .copy {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid #003333;
     padding-top: 18px;
     margin-top: 18px;
     font-size: 12px;
     line-height: 20px;
-    font-weight: 300;
     position: relative;
 }
 
@@ -68,7 +105,7 @@ footer ul.social li a {
     line-height: 30px;
     height: 30px;
     width: 30px;
-    background-color: #333;
+    background-color: #003333;
     border-radius: 15px;
     display: block;
     transition: all 0.4s ease;
@@ -78,6 +115,7 @@ footer ul.social li a {
 .footer ul.social li a i,
 footer ul.social li a i {
     line-height: 30px;
+    color: #fff;
 }
 
 .footer ul {
