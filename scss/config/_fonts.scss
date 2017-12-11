@@ -1,25 +1,26 @@
-$main-fonts: $font-body, $font-body-regular ;
-$second-fonts: $font-second-bold, $font-second-semi-bold;
+//$main-fonts: $font-body, $font-body-regular ;
+//$second-fonts: $font-second-bold, $font-second-semi-bold;
 
-@each $item in $main-fonts {
-  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}');
-}
+//@each $item in $main-fonts {
+//  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}');
+//}
 
-@each $item in $second-fonts {
-  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}');
-}
+//@each $item in $second-fonts {
+//  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}');
+//}
 
 $primary-fonts: $font-primary;
 @each $item in $primary-fonts {
-  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}Regular');
-  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}DemiBold', 500);
+  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}-regular');
+  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}-demibold', 600);
+  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}-bold', 700);
 }
 
 $secondary-fonts: $font-secondary;
 @each $item in $secondary-fonts {
   @include font-face(#{$item}, '../fonts/#{$item}/#{$item}Regular');
   @include font-face(#{$item}, '../fonts/#{$item}/#{$item}Medium', 500);
-  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}Bold', 600);
+  @include font-face(#{$item}, '../fonts/#{$item}/#{$item}Bold', 700);
 }
 
 

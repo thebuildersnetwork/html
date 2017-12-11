@@ -188,7 +188,7 @@ body {
 
     .select-alt .form-control {
         border-color: $white-color;
-        font-family: AvenirNextLTPro-Regular;
+
     }
 }
 
@@ -340,10 +340,6 @@ img {
     }
 }
 
-
-
-
-
 .btn-top {
     position: fixed;
     right: 40px;
@@ -438,9 +434,10 @@ img {
 .highlight h2,
 .highlight-global h2 {
     color: #07302C;
-    font-family: $font-second-semi-bold;
+    font-family: $font-secondary;
     text-transform: uppercase;
     text-align: center;
+    font-weight: 500;
 }
 
 .main-nav .navbar-nav li.user:hover .dropdown-menu {
@@ -495,6 +492,7 @@ img {
     font-size: 18px;
     text-align: center;
     margin-bottom: 20px;
+    font-weight: 600;
 
     p {
         margin-bottom: 0;
@@ -599,7 +597,7 @@ img {
     &.ctn-green h3 {
         padding: 12px 40px 8px 40px;
         text-transform: uppercase;
-        font-family: $font-second-semi-bold;
+        font-family: $font-secondary;
    
         display: inline-block;
         clear: both;
@@ -608,7 +606,7 @@ img {
     &.ctn-white h3 {
         padding: 12px 40px 8px 40px;
         text-transform: uppercase;
-        font-family: $font-second-semi-bold;
+        font-family: $font-secondary;
         
         display: inline-block;
         clear: both;
@@ -629,7 +627,8 @@ img {
         font-size: 2.25rem;
         margin-top: 0;
         margin-bottom: 0;
-        font-family: $font-second-semi-bold;
+        font-family: $font-secondary;
+        font-weight: 500;
     }
 
     &.ctn-green {
@@ -644,7 +643,9 @@ img {
             font-size: 2.25rem;
             margin-top: 0;
             margin-bottom: 0;
-            font-family: $font-second-semi-bold;
+            font-weight: 500;
+            font-family: $font-secondary;
+            font-weight: 500;
         }
     }
 
@@ -910,7 +911,7 @@ img {
     h3 {
         height: 40px;
         font-size: 1rem;
-        font-family: $font-second-bold;
+        font-family: $font-secondary;
         border-radius: 2px;
     }
 
@@ -925,7 +926,7 @@ img {
             font-size: 0.9rem;
             border: 1px solid $nav-color;
             float: left;
-            font-family: AvenirNextLTPro-Regular;
+
             border-radius: 2px;
             outline: 0;
         }
@@ -938,7 +939,7 @@ img {
             border: 0;
             float: right;
             border-radius: 2px;
-            font-family: $font-second-bold;
+            font-family: $font-secondary; font-weight: 500;
         }
     }
 }
@@ -997,7 +998,7 @@ img {
         padding: 10px 0;
         text-align: center;
         background: rgba(0, 0, 0, 0.5);
-        font-family: $font-second-bold;
+        font-family: $font-secondary; font-weight: 500;
     }
 
     .slick-prev {
@@ -1079,7 +1080,7 @@ img {
 
 .art-1 {
     margin-bottom: 40px;
-    font-family: $font-second-bold;
+    font-family: $font-secondary; font-weight: 500;
 }
 
 .art-left h4,
@@ -1116,7 +1117,8 @@ img {
         padding: 5px;
         background: rgba(255, 255, 255, 0.8);
         font-size: 1rem;
-
+        font-weight: 600;
+        line-height: 1.2;
         > {
             span {
                 padding-bottom: 5px;
@@ -1142,6 +1144,7 @@ img {
         padding: 5px 10px;
         background: rgba(255, 255, 255, 0.9);
         font-size: 1rem;
+        font-weight: bold;
     }
 }
 
@@ -1596,7 +1599,7 @@ img {
 
 .list-tool {
     margin-bottom: 0;
-    font-family: AvenirNextLTPro-Regular;
+
     margin-top: 15px;
 
     li {
@@ -1741,7 +1744,7 @@ img {
 .table-style tr td {
     border-top: 0;
     border-bottom: 2px solid #ccd6d6;
-    font-family: AvenirNextLTPro-Regular;
+
     font-size: 0.75rem;
 
     a {
@@ -1800,13 +1803,13 @@ img {
         padding: 0 5px;
         background: #07302c;
         color: $white-color;
-        font-family: $font-second-semi-bold;
+        font-family: $font-secondary;
         min-width: 190px;
     }
 }
 
 .fck {
-    font-family: AvenirNextLTPro-Regular;
+
     font-size: 1.25rem;
 
     strong {
@@ -1817,7 +1820,7 @@ img {
 .art-blog,
 .fck .box-style,
 .pagging ul li {
-    font-family: $font-second-semi-bold;
+    font-family: $font-secondary;
 }
 
 .fck .box-style {
